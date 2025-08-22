@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./../style.css">
+</head>
+
+<body>
+  <header class="header">
+    <span>Character</span>
+    <div class="icons">
+      <a href="./../home.html" class="linkMenu"><img src="./../../img/home.svg" /></a>
+      <a href="./character.html" class="linkMenu"><img src="./../../img/user.svg" /></a>
+      <a href="./../setting.html" class="linkMenu"><img src="./../../img/settings.svg" /></a>
+    </div>
+  </header>
+  <main class="pageContainer">
+    <div class="person">
+      <div class="imgWrapper">
+        <img id="imgPerson" src="./../../img/ch1.jpg" class="imgPerson" />
+        <button class="pencil"><img src="./../../img/pencil.svg" /></button>
+      </div>
+
+      <div class="infoChar">
+        <span id="nameVal" class="namePerson"></span>
+        <span class="win">Wins:</span>
+        <span class="los">Loses:</span>
+
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <button class="closeButton">X</button>
+        <div class="ch-container">
+          <img class="chImg" src="./../../img/ch1.jpg" alt="Персонаж 1">
+          <button class="buttonChange" data-src='./../../img/ch1.jpg'>✓</button>
+        </div>
+        <div class="ch-container">
+          <img class="chImg" src="./../../img/ch2.jpg" alt="Персонаж 2">
+          <button class="buttonChange" data-src='./../../img/ch2.jpg'>✓</button>
+        </div>
+        <div class="ch-container">
+          <img class="chImg" src="./../../img/ch3.jpg" alt="Персонаж 3">
+          <button class="buttonChange" data-src='./../../img/ch3.jpg'>✓</button>
+        </div>
+        <div class="ch-container">
+          <img class="chImg" src="./../../img/ch4.jpg" alt="Персонаж 4">
+          <button class="buttonChange" data-src='./../../img/ch4.jpg'>✓</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="character.script.js"></script>
+</body>
+
+</html>

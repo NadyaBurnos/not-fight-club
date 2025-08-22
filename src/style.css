@@ -1,0 +1,223 @@
+.newCharacter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding-top: 200px;
+  width: 400px;
+  height: 300px;
+  gap: 20px;
+}
+
+.inputName {
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #3498db;
+  height: 20px;
+}
+
+.create {
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.blockInputName {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px;
+  border-bottom: 2px solid black;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+.game {
+  margin: auto;
+  width: 80px;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.field {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkMenu {
+  cursor: pointer;
+}
+
+.pageContainer {
+  margin: 20px;
+}
+
+.person {
+  display: flex;
+
+}
+
+.imgWrapper {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgWrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.imgPerson:hover .imgWrapper::after {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.imgPerson {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.pencil {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  background: white;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.imgWrapper:hover .pencil {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  display: none;
+  /* скрыто по умолчанию */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* затемнение */
+}
+
+/* Контент модалки */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  margin: 15% auto;
+  width: 300px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  width: 670px;
+  height: 455px;
+  gap: 10px;
+  padding: 30px 10px 10px 20px;
+}
+
+/* Кнопка закрытия */
+.closeButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.chImg {
+  width: 150px;
+  height: 200px;
+}
+
+.ch-container {
+  position: relative;
+}
+
+.buttonChange {
+  position: absolute;
+  top: 20%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.ch-container:hover .buttonChange {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.namePerson {
+  color: black;
+  font-size: 18px;
+
+}
+
+.infoChar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.win{
+  color: green;
+}
+
+.los {
+  color: red;
+}
